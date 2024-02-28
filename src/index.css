@@ -1,0 +1,261 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d8e2dc;
+}
+
+.products {
+  display: grid;
+  column-gap: 20px;
+  row-gap: 50px;
+  justify-items: center;
+  grid-template-columns: 300px;
+  grid-template-rows: 350px;
+  justify-content: center;
+  padding: 30px 0px;
+}
+
+.productContainer {
+  padding: 0px 0px;
+  max-width: 300px;
+  min-width: 250px;
+  width: 80%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.imageContainer {
+  cursor: pointer;
+  text-align: center;
+  height: 200px;
+  padding-top: 20px;
+  margin-bottom: 10px;
+}
+
+.contentContainer {
+  padding: 0px 5px 0px 10px;
+}
+
+.contentContainer h4 {
+  font-size: 18px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.contentContainer p {
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+.productDetail {
+  margin-top: 40px;
+}
+
+.productImage {
+  margin: auto;
+  width: 250px;
+  height: 250px;
+}
+
+.productContent {
+  padding: 30px 30px;
+}
+
+.productContent h1 {
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+
+.productContent p {
+  margin-bottom: 20px;
+  line-height: 1.5em;
+}
+
+.productContent h2 {
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.productContent h3 {
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+
+.productContent h3 span {
+  cursor: pointer;
+}
+
+.productContent button {
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-transform: capitalize;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  background-color: bisque;
+}
+
+.productCategory {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: auto;
+  justify-content: center;
+}
+
+.layoutContainer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d8e2dc;
+}
+
+.container {
+  padding: 20px 50px;
+  background-color: whitesmoke;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.1), 5px 5px 1px rgba(0, 0, 0, 0.1),
+    10px 10px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  width: 400px;
+}
+
+.container h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.label {
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+
+.container p {
+  text-transform: capitalize;
+}
+
+.inputField {
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid gray;
+  outline: none;
+  padding: 5px 20px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px 0px;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  background-color: #d8e2dc;
+}
+
+@media only screen and (min-width: 500px) {
+  .products {
+    grid-template-columns: 250px 250px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .products {
+    grid-template-columns: 300px 300px;
+  }
+  .productDetail {
+    display: flex;
+  }
+  .productImage {
+    padding-left: 30px;
+    height: 350px;
+    width: 50%;
+  }
+  .productContent {
+    width: 50%;
+  }
+  .productCategory {
+    column-gap: 20px;
+    grid-template-columns: 300px 300px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .products {
+    grid-template-columns: 250px 250px 250px;
+  }
+  .productImage {
+    padding-left: 30px;
+    height: 350px;
+    width: 400px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .products {
+    grid-template-columns: 300px 300px 300px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .productDetail {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    width: 80%;
+    margin: 70px auto;
+    height: 500px;
+    border-radius: 20px;
+    background-color: white;
+  }
+
+  .productImage {
+    height: 60%;
+  }
+
+  .productContent {
+    padding-right: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    height: 100%;
+    width: 70%;
+  }
+
+  .productContent h1 {
+    font-size: 30px;
+  }
+
+  .productContent p {
+    font-size: 18px;
+  }
+
+  .productContent h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-transform: capitalize;
+  }
+
+  .productContent h3 {
+    font-size: 18px;
+    text-transform: capitalize;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  .products {
+    grid-template-columns: 300px 300px 300px 300px;
+  }
+}
